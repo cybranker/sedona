@@ -24,24 +24,24 @@
     <main class="container">
         <section class="filters">
             <form action="" method="post">
-                <div class="filter-item">
-                    <h2 class="filter-title">инфраструктура:</h2>
+                <fieldset class="filter-item">
+                    <legend class="filter-title">инфраструктура:</legend>
                     <ul class="filter-list">
                         <li><label for="pool"><input type="checkbox" id="pool">бассейн</label></li>
                         <li><label for="parking"><input type="checkbox" id="parking">парковка</label></li>
                         <li><label for="wifi"><input type="checkbox" id="wifi">wi-fi</label></li>
                     </ul>
-                </div> <!-- /.filter-item -->
-                <div class="filter-item">
-                    <h2 class="filter-title">тип жилья:</h2>
+                </fieldset> <!-- /.filter-item -->
+                <fieldset class="filter-item">
+                    <legend class="filter-title">тип жилья:</legend>
                     <ul class="filter-list">
                         <li><label for="hotel"><input type="checkbox" id="hotel">гостиница</label></li>
                         <li><label for="motel"><input type="checkbox" id="motel">мотель</label></li>
                         <li><label for="apartments"><input type="checkbox" id="apartments">апартаменты</label></li>
                     </ul>
-                </div> <!-- /.filter-item -->
-                <div class="filter-item">
-                    <h2 class="filter-title">стоимость в сутки (р):</h2>
+                </fieldset> <!-- /.filter-item -->
+                <fieldset class="filter-item">
+                    <legend class="filter-title">стоимость в сутки (р):</legend>
                     <div class="range-controls">
                         <div class="price-controls">
                             от <input class="min-price" type="text" value="0">
@@ -54,7 +54,7 @@
                         </div>
                         <button type="submit">показать</button>
                     </div>
-                </div> <!-- /.filter-item -->
+                </fieldset> <!-- /.filter-item -->
             </form>
         </section> <!-- /.filters -->
         <section class="hotels">
