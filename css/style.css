@@ -6,8 +6,21 @@ body {
     line-height: 26px;
 }
 
+/*=================================
+=            $Elements            =
+=================================*/
+
 h2 { font-size: 21px; }
 
+/*=====  End of $Elements  ======*/
+
+
+
+
+
+/*================================================
+=            $Objects and abstraction            =
+================================================*/
 .clearfix::after {
     content: "";
     display: table;
@@ -26,7 +39,15 @@ h2 { font-size: 21px; }
 .pull-left { float: left !important; }
 
 .pull-right { float: right !important; }
+/*=====  End of $Objects and abstraction  ======*/
 
+
+
+
+
+/*===============================
+=            $Header            =
+===============================*/
 .main-navigation {
     padding: 0 6%;
 
@@ -49,7 +70,15 @@ h2 { font-size: 21px; }
 .main-navigation li:nth-last-child(2) {
     float: right;
 }
+/*=====  End of $Header  ======*/
 
+
+
+
+
+/*======================================
+=            $Index Content            =
+======================================*/
 .index-logo {
     height: 445px;
     padding-top: 65px;
@@ -107,7 +136,15 @@ h2 { font-size: 21px; }
     height: 470px;
     text-indent: -9000px;
 }
+/*=====  End of $Index Content  ======*/
 
+
+
+
+
+/*===============================
+=            $Footer            =
+===============================*/
 .footer-contacts,
 .footer-social,
 .footer-copyright {
@@ -116,3 +153,4 @@ h2 { font-size: 21px; }
     height: 120px;
     outline: 1px solid violet;
 }
+/*=====  End of $Footer  ======*/
