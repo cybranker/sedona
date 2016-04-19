@@ -71,9 +71,48 @@ h2 { font-size: 21px; }
 }
 
 .dignity-item {
+    float: left;
     width: 33%;
+    height: 255px;
+    outline: 1px solid yellow;
 }
 
 .dignity-foto {
     width: 67%;
+    height: 255px;
+    text-indent: -9000px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    outline: 2px solid blue;
+}
+
+.dignity-foto.pull-right { background-image: url(../img/dignity-1.jpg); }
+
+.dignity-foto.pull-left { background-image: url(../img/dignity-2.jpg); }
+
+.features-item {
+    float: left;
+    width: 33%;
+    min-height: 330px;
+    outline: 1px solid violet;
+}
+
+.hotel-search {
+    height: 290px;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 470px;
+    text-indent: -9000px;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    float: left;
+    width: 33%;
+    height: 120px;
+    outline: 1px solid violet;
 }
