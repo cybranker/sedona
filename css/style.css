@@ -141,10 +141,23 @@ h2 { font-size: 21px; }
 }
 
 .dignity-title {
-    /* Только для оформления сетки */
-    min-height: 215px;
-    outline: 2px solid crimson;
+    padding-top: 54px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #ffffff;
 }
+
+.dignity-title h2 {
+    width: 52%;
+    margin: 0 auto 30px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+}
+
+.dignity-title p { line-height: 26px; }
+
+.dignity-title p:last-child { margin-bottom: 0; }
 
 .dignity-container {
     /* Только для оформления сетки */
