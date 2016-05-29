@@ -96,6 +96,7 @@ h2 { font-size: 21px; }
     color: #000000;
     line-height: 26px;
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 .main-navigation a:hover { color: #81b3d2; }
@@ -141,8 +142,7 @@ h2 { font-size: 21px; }
 }
 
 .dignity-title {
-    padding-top: 54px;
-    padding-bottom: 50px;
+    padding: 54px 0 50px;
     text-align: center;
     background-color: #ffffff;
 }
