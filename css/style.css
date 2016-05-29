@@ -139,6 +139,7 @@ h2 { font-size: 21px; }
     height: 60px;
     background: url('../img/polyhedra.png') no-repeat bottom left;
     background-size: 100%;
+    z-index: 2;
 }
 
 .dignity-title {
