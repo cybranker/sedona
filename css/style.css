@@ -1,9 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    min-width: 768px;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
 }
 
 /*=================================
@@ -31,9 +34,9 @@ h2 { font-size: 21px; }
     min-width: 768px;
     max-width: 1200px;
     margin: 0 auto;
-
-    /* Только для оформления сетки */
-    outline: 2px solid green;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+    outline: 1px solid green;
 }
 
 .pull-left { float: left !important; }
@@ -48,28 +51,61 @@ h2 { font-size: 21px; }
 /*===============================
 =            $Header            =
 ===============================*/
+.main-header { background-color: #ffffff; }
+
 .main-navigation {
-    padding: 0 6%;
-
-    /* Только для оформления сетки */
-    min-height: 55px;
-    outline: 2px solid crimson;
+    position: relative;
+    padding: 16px 6%;
 }
 
-.main-navigation li {
-    width: 20%;
-    outline: 1px solid blue;
+.main-navigation .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 1;
 }
+
+.main-navigation .logo img {
+    width: 138px;
+    height: 70px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-navigation li { width: 20%; }
 
 .main-navigation li:first-child,
 .main-navigation li:nth-child(2) {
     float: left;
+    text-align: left;
 }
 
 .main-navigation li:last-child,
 .main-navigation li:nth-last-child(2) {
     float: right;
+    text-align: right;
 }
+
+.main-navigation a {
+    font: 700 14px 'PT Sans';
+    color: #000000;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.main-navigation a:hover { color: #81b3d2; }
+
+.main-navigation a:active { color: rgba(0, 0, 0, 0.3); }
+
+.main-navigation .active,
+.main-navigation .active:active { color: #766357; }
+
+.main-navigation .active:hover { color: #604e43; }
 /*=====  End of $Header  ======*/
 
 
