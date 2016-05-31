@@ -160,17 +160,33 @@ h2 { font-size: 21px; }
 
 .dignity-title p:last-child { margin-bottom: 0; }
 
-.dignity-container {
-    /* Только для оформления сетки */
-    min-height: 255px;
-    outline: 2px solid orange;
-}
+.dignity-container { min-height: 255px; }
 
 .dignity-item {
     float: left;
     width: 33%;
     height: 255px;
-    outline: 1px solid yellow;
+    padding: 55px 0;
+    text-align: center;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+}
+
+.dignity-name {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.dignity-item p {
+    margin: 20px 0;
+    padding: 0 15%;
+}
+
+.dignity-item.pull-left,
+.dignity-item.pull-right {
+    background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .dignity-foto {
@@ -180,7 +196,6 @@ h2 { font-size: 21px; }
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
-    outline: 2px solid blue;
 }
 
 .dignity-foto.pull-right { background-image: url(../img/dignity-1.jpg); }
