@@ -193,6 +193,7 @@ h2 { font-size: 21px; }
     width: 67%;
     height: 255px;
     font-size: 0;
+    background-color: gray;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
@@ -201,6 +202,8 @@ h2 { font-size: 21px; }
 .dignity-foto.pull-right { background-image: url(../img/dignity-1.jpg); }
 
 .dignity-foto.pull-left { background-image: url(../img/dignity-2.jpg); }
+
+.features { background-color: #ffffff; }
 
 .features-item {
     float: left;
