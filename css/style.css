@@ -212,11 +212,15 @@ h2 { font-size: 21px; }
     position: relative;
     float: left;
     width: 23%;
+    margin-right: 2px;
     padding: 165px 5% 60px;
     text-align: center;
 }
 
-.features-item:last-child { float: right; }
+.features-item:last-child {
+    float: right;
+    margin-right: 0;
+}
 
 .features-item::before {
     content: '';
