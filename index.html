@@ -101,23 +101,23 @@
         </section>
         <section class="map">
             <div id="map-canvas">Карта</div>
+            <footer class="main-footer">
+                <div class="container clearfix">
+                    <section class="footer-contacts">
+                        #visitsedona
+                    </section>
+                    <section class="footer-social">
+                        <a class="social-btn social-btn-tw" href="#">Twitter</a>
+                        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                        <a class="social-btn social-btn-yt" href="#">Youtube</a>
+                    </section>
+                    <section class="footer-copyright">
+                        <p>website by <a href="#"><img src="img/logo-htmlacademy.png" width="113" height="39" alt="HTML Academy"></a></p>
+                    </section>
+                </div>
+            </footer>
         </section>
     </main>
-    <footer class="main-footer">
-        <div class="container clearfix">
-            <section class="footer-contacts">
-                #visitsedona
-            </section>
-            <section class="footer-social">
-                <a class="social-btn social-btn-tw" href="#">Twitter</a>
-                <a class="social-btn social-btn-fb" href="#">Facebook</a>
-                <a class="social-btn social-btn-yt" href="#">Youtube</a>
-            </section>
-            <section class="footer-copyright">
-                <p>website by <a href="#"><img src="img/logo-htmlacademy.png" width="113" height="39" alt="HTML Academy"></a></p>
-            </section>
-        </div>
-    </footer>
 
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFZFbyku74ZAjCtmGFS2R68ZfyMoAQZq0&callback=initMap">
@@ -127,8 +127,9 @@
             var myLatLng = {lat: 34.868840, lng: -111.766270};
 
             var map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 12,
-                center: myLatLng
+                zoom: 9,
+                center: myLatLng,
+                disableDefaultUI: true
             });
 
             var marker = new google.maps.Marker({

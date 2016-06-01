@@ -326,10 +326,25 @@ h2 { font-size: 21px; }
     line-height: 26px;
 }
 
+.map { position: relative; }
+
 #map-canvas {
     width: 100%;
-    height: 470px;
-    text-indent: -9000px;
+    height: 590px;
+    font-size: 0;
+    text-decoration: none;
+}
+
+.map .main-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.map .main-footer .container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 /*=====  End of $Index Content  ======*/
 
@@ -395,6 +410,10 @@ h2 { font-size: 21px; }
 /*===============================
 =            $Footer            =
 ===============================*/
+.main-footer {
+    background-color: rgba(254, 254, 254, 0.9);
+}
+
 .footer-contacts,
 .footer-social,
 .footer-copyright {
