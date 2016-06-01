@@ -203,14 +203,59 @@ h2 { font-size: 21px; }
 
 .dignity-foto.pull-left { background-image: url(../img/dignity-2.jpg); }
 
-.features { background-color: #ffffff; }
+.features {
+    min-height: 330px;
+    background-color: #ffffff;
+}
 
 .features-item {
+    position: relative;
     float: left;
-    width: 33%;
-    min-height: 330px;
-    outline: 1px solid violet;
+    width: 23%;
+    padding: 165px 5% 60px;
+    text-align: center;
 }
+
+.features-item:last-child { float: right; }
+
+.features-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    background: url('../img/sprite-sedona.png') no-repeat 0 0;
+    transform: translateX(-50%);
+}
+
+.features-item-housing::before {
+    top: 60px;
+    width: 75px;
+    height: 72px;
+    background-position: -5px -85px;
+}
+
+.features-item-food::before {
+    top: 62px;
+    width: 74px;
+    height: 70px;
+    background-position: -5px -5px;
+}
+
+.features-item-souvenir::before {
+    top: 56px;
+    width: 64px;
+    height: 76px;
+    background-position: -5px -167px;
+}
+
+.features-name {
+    display: block;
+    margin-bottom: 25px;
+    font: 700 21px 'PT Sans';
+    line-height: 21px;
+    color: #000000;
+}
+
+.features-item p { margin-bottom: 0; }
 
 .hotel-search {
     height: 290px;
