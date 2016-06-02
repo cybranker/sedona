@@ -478,6 +478,7 @@ h2 { font-size: 21px; }
     text-decoration: none;
     background-color: #81b3d2;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .social-btn i {
