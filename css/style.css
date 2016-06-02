@@ -455,7 +455,6 @@ h2 { font-size: 21px; }
     float: left;
     width: 33%;
     text-align: center;
-    outline: 1px solid violet;
 }
 
 .footer-contacts {
@@ -493,4 +492,29 @@ h2 { font-size: 21px; }
 .social-btn:active { background-color: #5496bd; }
 
 .social-btn:active i { opacity: 0.3; }
+
+.footer-copyright { padding: 40px 0; }
+
+.footer-copyright p {
+    margin: 0;
+    line-height: 39px;
+}
+
+.footer-copyright a {
+    display: inline-block;
+    width: 113px;
+    height: 39px;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 0;
+    text-decoration: none;
+    background: url('../img/sprite-sedona.png') no-repeat -5px -253px;
+}
+
+.footer-copyright a:hover { background-position: -5px -302px; }
+
+.footer-copyright a:active {
+    background-position: -5px -253px;
+    opacity: 0.3;
+}
 /*=====  End of $Footer  ======*/
