@@ -81,23 +81,53 @@
             <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="btn btn-brown" href="#">поиск гостиницы в седоне</a>
             <!-- Всплывающая форма -->
-            <div class="hotel-search-form" style="display: none;">
+            <div class="modal-content-hotel-search">
                 <form action="" method="post">
-                    <label for="date-check-in">дата заезда: <input type="date" id="date-check-in"></label>
-                    <label for="date-leaving">дата выезда: <input type="date" id="date-leaving"></label>
-                    <label for="adults">Взрослые:
-                        <button type="button">+</button>
-                        <input type="text" id="adults">
-                        <button type="button">-</button>
-                    </label>
-                    <label for="children">Дети:
-                        <button type="button">+</button>
-                        <input type="text" id="children">
-                        <button type="button">-</button>
-                    </label>
-                    <button type="submit">Найти</button>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="date-check-in">дата заезда:</label>
+                            </td>
+                            <td colspan="3">
+                                <div class="select-date">
+                                    <input type="date" id="date-check-in">
+                                    <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="date-leaving">дата выезда:</label>
+                            </td>
+                            <td colspan="3">
+                                <div class="select-date">
+                                    <input type="date" id="date-leaving">
+                                    <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="adults">Взрослые:</label>
+                            </td>
+                            <td>
+                                <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
+                             --><input class="number-persons" type="text" maxlength="3" id="adults" value="0"><!--
+                             --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
+                            </td>
+                            <td class="label-content">
+                                <label for="children">Дети:</label>
+                            </td>
+                            <td>
+                                <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
+                             --><input class="number-persons" type="text" maxlength="3" id="children" value="0"><!--
+                             --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-blue" type="submit">Найти</button>
                 </form>
-            </div> <!-- /.hotel-search-form -->
+            </div> <!-- /.modal-content-hotel-search -->
         </section>
         <section class="map">
             <div id="map-canvas">Карта</div>

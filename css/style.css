@@ -37,17 +37,17 @@ body {
     speak: none;
 }
 
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-calendar::before { content: "\e800"; } /* "" */
-.icon-plus::before { content: "\e801"; } /* "" */
-.icon-minus::before { content: "\e802"; } /* "" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-facebook::before { content: "\66"; }
+.icon-twitter::before { content: "\74"; }
+.icon-up-dir::before { content: "\25b2"; }
+.icon-down-dir::before { content: "\25bc"; }
+.icon-star::before { content: "\2605"; }
+.icon-check-off::before { content: "\2610"; }
+.icon-check-on::before { content: "\2611"; }
+.icon-calendar::before { content: "\e800"; }
+.icon-plus::before { content: "\e801"; }
+.icon-minus::before { content: "\e802"; }
+.icon-youtube::before { content: "\f39e"; }
 
 /*=================================
 =            $Elements            =
@@ -336,6 +336,7 @@ h2 { font-size: 21px; }
 .features-item p { margin-bottom: 0; }
 
 .hotel-search {
+    position: relative;
     min-height: 235px;
     padding-top: 55px;
     text-align: center;
@@ -519,3 +520,139 @@ h2 { font-size: 21px; }
     opacity: 0.3;
 }
 /*=====  End of $Footer  ======*/
+
+
+
+
+
+/*=========================================
+=            Всплывающая форма            =
+=========================================*/
+.modal-content-hotel-search {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 568px;
+    padding: 55px;
+    transform: translateX(-50%);
+    z-index: 20;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+}
+
+.modal-content-hotel-search table {
+    width: 100%;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+}
+
+.modal-content-hotel-search td {
+    width: 115px;
+    padding: 0;
+    padding-bottom: 30px;
+    vertical-align: middle;
+}
+
+.modal-content-hotel-search td:first-child { text-align: left; }
+
+.modal-content-hotel-search label,
+.modal-content-hotel-search input[type="date"],
+.modal-content-hotel-search input[type="text"] {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+}
+
+.modal-content-hotel-search .label-content {
+    width: 90px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.modal-content-hotel-search input[type="date"],
+.modal-content-hotel-search input[type="text"] {
+    height: 38px;
+    padding: 4px 13px;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.modal-content-hotel-search input[type="date"]:hover,
+.modal-content-hotel-search input[type="text"]:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.modal-content-hotel-search input[type="date"]:focus,
+.modal-content-hotel-search input[type="text"]:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+}
+
+.modal-content-hotel-search input[type="date"] {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.modal-content-hotel-search .select-date { position: relative; }
+
+.modal-content-hotel-search .select-date-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 38px;
+    padding: 6px 5px;
+    margin: 0;
+    font-size: 21px;
+    line-height: 26px;
+    color: #c2c2c2;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.modal-content-hotel-search input.number-persons {
+    width: 33%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.modal-content-hotel-search .increase-btn,
+.modal-content-hotel-search .reduce-btn {
+    width: 33%;
+    height: 38px;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #a9a9a9;
+    line-height: 38px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-content-hotel-search .select-date-btn:hover,
+.modal-content-hotel-search .increase-btn:hover,
+.modal-content-hotel-search .reduce-btn:hover { color: #000000; }
+
+.modal-content-hotel-search .select-date-btn:active,
+.modal-content-hotel-search .increase-btn:active,
+.modal-content-hotel-search .reduce-btn:active { color: #81b3d2; }
+
+.modal-content-hotel-search .btn {
+    padding: 16px 10px;
+    width: 100%;
+}
+/*=====  End of Всплывающая форма  ======*/
