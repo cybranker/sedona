@@ -167,6 +167,7 @@ h2 { font-size: 21px; }
     text-align: right;
 }
 
+.main-navigation li,
 .main-navigation a {
     font: 700 14px 'PT Sans';
     color: #000000;
