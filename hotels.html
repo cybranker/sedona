@@ -27,32 +27,66 @@
                 <fieldset class="filter-item">
                     <legend class="filter-title">инфраструктура:</legend>
                     <ul class="filter-list">
-                        <li><label for="pool"><input type="checkbox" id="pool">бассейн</label></li>
-                        <li><label for="parking"><input type="checkbox" id="parking">парковка</label></li>
-                        <li><label for="wifi"><input type="checkbox" id="wifi">wi-fi</label></li>
+                        <li>
+                            <label>
+                                <input type="checkbox">бассейн
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">парковка
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">wi-fi
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
                     </ul>
                 </fieldset> <!-- /.filter-item -->
                 <fieldset class="filter-item">
                     <legend class="filter-title">тип жилья:</legend>
                     <ul class="filter-list">
-                        <li><label for="hotel"><input type="checkbox" id="hotel">гостиница</label></li>
-                        <li><label for="motel"><input type="checkbox" id="motel">мотель</label></li>
-                        <li><label for="apartments"><input type="checkbox" id="apartments">апартаменты</label></li>
+                        <li>
+                            <label>
+                                <input type="checkbox">гостиница
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">мотель
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">апартаменты
+                                <span class="checkbox-indicator"></span>
+                            </label>
+                        </li>
                     </ul>
                 </fieldset> <!-- /.filter-item -->
                 <fieldset class="filter-item">
                     <legend class="filter-title">стоимость в сутки (р):</legend>
-                    <div class="range-controls">
+                    <div class="filter-range">
                         <div class="price-controls">
-                            от <input class="min-price" type="text" value="0">
-                            до <input class="max-price" type="text" value="3000">
+                            <label class="min-price">
+                                от <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">
+                                до <input type="text" name="max-price" value="3000">
+                            </label>
                         </div>
                         <div class="range-controls">
                             <div class="scale"><div class="bar"></div></div>
                             <div class="toggle min-toggle"></div>
                             <div class="toggle max-toggle"></div>
                         </div>
-                        <button type="submit">показать</button>
+                        <button class="btn-transparent" type="submit">показать</button>
                     </div>
                 </fieldset> <!-- /.filter-item -->
             </form>
