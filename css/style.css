@@ -579,7 +579,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     color: inherit;
 }
 
-.sorting.pull-left {
+.sorting-left {
     margin-top: 6px;
     font-size: 12px;
     line-height: 18px;
@@ -587,12 +587,12 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     color: inherit;
 }
 
-.sorting.pull-left .sorting-name {
+.sorting-left .sorting-name {
     margin-right: 40px;
     font-weight: 400;
 }
 
-.sorting.pull-left .sorting-item {
+.sorting-left .sorting-item {
     margin-right: 30px;
     font-size: 12px;
     line-height: inherit;
@@ -602,21 +602,21 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting.pull-left .sorting-item:hover { color: #81b3d2; }
+.sorting-left .sorting-item:hover { color: #81b3d2; }
 
-.sorting.pull-left .sorting-item:active {
+.sorting-left .sorting-item:active {
     color: #000000;
     border-bottom: none;
 }
 
-.sorting.pull-left .sorting-item:last-child { margin-right: 0; }
+.sorting-left .sorting-item:last-child { margin-right: 0; }
 
-.sorting.pull-right {
+.sorting-right {
     font-size: 0;
     line-height: 0;
 }
 
-.sorting.pull-right .sorting-item {
+.sorting-right .sorting-item {
     display: inline-block;
     margin: 1px 0;
     vertical-align: middle;
@@ -626,9 +626,9 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     text-decoration: none;
 }
 
-.sorting.pull-right .sorting-item:hover { color: #000000; }
+.sorting-right .sorting-item:hover { color: #000000; }
 
-.sorting.pull-right .sorting-item:active { color: #81b3d2; }
+.sorting-right .sorting-item:active { color: #81b3d2; }
 
 .sorting-item > span::before { margin: 0; }
 
