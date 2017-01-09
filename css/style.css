@@ -398,11 +398,6 @@ img {
     bottom: 0;
     width: 100%;
 }
-
-.map .main-footer .container {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-}
 /*=====  End of $Index Content  ======*/
 
 
@@ -722,9 +717,16 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
 /*===============================
 =            $Footer            =
 ===============================*/
-.main-footer {
-    background-color: rgba(254, 254, 254, 0.9);
+.main-footer { background-color: rgba(254, 254, 254, 0.9); }
+
+.main-footer .container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
+
+.inner-page .main-footer { background-color: transparent; }
+
+.inner-page .main-footer .container { border-top: 1px solid #e5e5e5; }
 
 .footer-contacts,
 .footer-social,
