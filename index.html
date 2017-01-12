@@ -80,54 +80,6 @@
             <b>заинтересовались?</b>
             <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="btn btn-brown" href="#">поиск гостиницы в седоне</a>
-            <!-- Всплывающая форма -->
-            <div class="modal-content-hotel-search">
-                <form action="" method="post">
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="date-check-in">дата заезда:</label>
-                            </td>
-                            <td colspan="3">
-                                <div class="select-date">
-                                    <input type="date" id="date-check-in">
-                                    <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="date-leaving">дата выезда:</label>
-                            </td>
-                            <td colspan="3">
-                                <div class="select-date">
-                                    <input type="date" id="date-leaving">
-                                    <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="adults">Взрослые:</label>
-                            </td>
-                            <td>
-                                <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
-                             --><input class="number-persons" type="text" maxlength="3" id="adults" value="0"><!--
-                             --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
-                            </td>
-                            <td class="label-content">
-                                <label for="children">Дети:</label>
-                            </td>
-                            <td>
-                                <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
-                             --><input class="number-persons" type="text" maxlength="3" id="children" value="0"><!--
-                             --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
-                            </td>
-                        </tr>
-                    </table>
-                    <button class="btn btn-blue" type="submit">Найти</button>
-                </form>
-            </div> <!-- /.modal-content-hotel-search -->
         </section>
         <section class="map">
             <div id="map-canvas">Карта</div>
@@ -149,25 +101,58 @@
         </section>
     </main>
 
+    <!-- Всплывающая форма -->
+    <div class="modal-content-hotel-search">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="date-check-in">дата заезда:</label>
+                    </td>
+                    <td colspan="3">
+                        <div class="select-date">
+                            <input type="date" id="date-check-in">
+                            <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date-leaving">дата выезда:</label>
+                    </td>
+                    <td colspan="3">
+                        <div class="select-date">
+                            <input type="date" id="date-leaving">
+                            <button class="select-date-btn" type="button"><span class="icon-calendar"></span></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adults">Взрослые:</label>
+                    </td>
+                    <td>
+                        <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
+                     --><input class="number-persons" type="text" maxlength="3" id="adults" value="0"><!--
+                     --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
+                    </td>
+                    <td class="label-content">
+                        <label for="children">Дети:</label>
+                    </td>
+                    <td>
+                        <button class="increase-btn" type="button"><span class="icon-plus"></span></button><!--
+                     --><input class="number-persons" type="text" maxlength="3" id="children" value="0"><!--
+                     --><button class="reduce-btn" type="button"><span class="icon-minus"></span></button>
+                    </td>
+                </tr>
+            </table>
+            <button class="btn btn-blue" type="submit">Найти</button>
+        </form>
+    </div> <!-- /.modal-content-hotel-search -->
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFZFbyku74ZAjCtmGFS2R68ZfyMoAQZq0&callback=initMap">
     </script>
-    <script>
-        function initMap() {
-            var myLatLng = {lat: 34.868840, lng: -111.766270};
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 9,
-                center: myLatLng,
-                disableDefaultUI: true
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Sedona, Arizona'
-            });
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

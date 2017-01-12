@@ -145,7 +145,11 @@ img {
 /*===============================
 =            $Header            =
 ===============================*/
-.main-header { background-color: #ffffff; }
+.main-header {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 20;
+}
 
 .main-navigation {
     position: relative;
@@ -157,7 +161,7 @@ img {
     top: 0;
     left: 50%;
     margin-left: -69px;
-    z-index: 1;
+    z-index: 20;
 }
 
 .main-navigation .logo img {
@@ -218,6 +222,7 @@ img {
     text-align: center;
     background: #81b3d2 url('../img/index-bg.jpg') no-repeat top center;
     background-size: cover;
+    z-index: 10;
 }
 
 .index-logo img {
@@ -238,9 +243,11 @@ img {
 }
 
 .dignity-title {
+    position: relative;
     padding: 54px 0 50px;
     text-align: center;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .dignity-title h2 {
@@ -256,8 +263,10 @@ img {
 .dignity-title p:last-child { margin-bottom: 0; }
 
 .dignity-container {
+    position: relative;
     min-height: 255px;
     background-color: #eeeeee;
+    z-index: 10;
 }
 
 .dignity-item {
@@ -302,8 +311,10 @@ img {
 .dignity-foto.pull-left { background-image: url(../img/dignity-2.jpg); }
 
 .features {
+    position: relative;
     min-height: 330px;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .features-item {
@@ -360,6 +371,7 @@ img {
     padding-top: 55px;
     text-align: center;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .hotel-search b {
@@ -808,15 +820,15 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
 =========================================*/
 .modal-content-hotel-search {
     position: absolute;
-    top: 100%;
+    top: 2240px;
     left: 50%;
     width: 568px;
     padding: 55px;
     transform: translateX(-50%);
-    z-index: 20;
     background-color: #ffffff;
     box-sizing: border-box;
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+    z-index: 5;
 }
 
 .modal-content-hotel-search table {
