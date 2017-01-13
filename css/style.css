@@ -853,7 +853,8 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
 
 .modal-content-show {
     display: block;
-    animation: bounce 0.6s;
+    animation: bounce 1s;
+    animation-timing-function: ease;
 }
 
 .modal-content-hotel-search table {
