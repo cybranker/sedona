@@ -77,9 +77,12 @@
             </div>
         </section> <!-- /.dignity-container -->
         <section class="hotel-search">
-            <b>заинтересовались?</b>
-            <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="btn btn-brown" href="#">поиск гостиницы в седоне</a>
+            <div class="hotel-search-content">
+                <b>заинтересовались?</b>
+                <p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <a class="btn btn-brown" id="hotel-search-btn" href="#">поиск гостиницы в седоне</a>
+            </div>
+
             <!-- Всплывающая форма -->
             <div class="modal-content-hotel-search">
                 <form action="" method="post">
@@ -152,22 +155,6 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFZFbyku74ZAjCtmGFS2R68ZfyMoAQZq0&callback=initMap">
     </script>
-    <script>
-        function initMap() {
-            var myLatLng = {lat: 34.868840, lng: -111.766270};
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 9,
-                center: myLatLng,
-                disableDefaultUI: true
-            });
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Sedona, Arizona'
-            });
-        }
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -49,6 +49,28 @@ body {
 .icon-minus::before { content: "\e802"; }
 .icon-youtube::before { content: "\f39e"; }
 
+
+
+/*===================================
+=            $Animations            =
+===================================*/
+@keyframes bounce {
+    0% { transform: translate(-50%, -392px); }
+    70% { transform: translate(-50%, 35px); }
+    100% { transform: translate(-50%, 0); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+/*=====  End of $Animations  ======*/
+
+
+
+
+
 /*=================================
 =            $Elements            =
 =================================*/
@@ -256,8 +278,10 @@ img {
 .dignity-title p:last-child { margin-bottom: 0; }
 
 .dignity-container {
+    position: relative;
     min-height: 255px;
     background-color: #eeeeee;
+    z-index: 20;
 }
 
 .dignity-item {
@@ -356,13 +380,19 @@ img {
 
 .hotel-search {
     position: relative;
+    z-index: 10;
+}
+
+.hotel-search-content {
+    position: relative;
     min-height: 235px;
     padding-top: 55px;
     text-align: center;
     background-color: #ffffff;
+    z-index: 10;
 }
 
-.hotel-search b {
+.hotel-search-content b {
     display: block;
     margin-bottom: 25px;
     font-size: 30px;
@@ -370,12 +400,12 @@ img {
     color: #000000;
 }
 
-.hotel-search p {
+.hotel-search-content p {
     margin-bottom: 37px;
     line-height: 24px;
 }
 
-.hotel-search > .btn {
+.hotel-search-content > .btn {
     width: 568px;
     padding: 30px 10px;
     font-size: 21px;
@@ -811,12 +841,19 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     top: 100%;
     left: 50%;
     width: 568px;
+    display: none;
     padding: 55px;
     transform: translateX(-50%);
     z-index: 20;
     background-color: #ffffff;
     box-sizing: border-box;
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
+    z-index: 5;
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
 }
 
 .modal-content-hotel-search table {
