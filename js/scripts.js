@@ -21,6 +21,6 @@ var hotelSearchBtn = document.querySelector('#hotel-search-btn'),
 hotelSearchBtn.addEventListener('click', function(e) {
     e.preventDefault();
 
-    popup.classList.add('modal-content-show');
+    popup.classList.toggle('modal-content-show');
     dateCheckInInput.focus();
 });
