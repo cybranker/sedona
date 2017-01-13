@@ -13,14 +13,3 @@ function initMap() {
         title: 'Sedona, Arizona'
     });
 }
-
-var hotelSearchBtn = document.querySelector('#hotel-search-btn'),
-    popup = document.querySelector('.modal-content-hotel-search'),
-    dateCheckInInput = popup.querySelector('#date-check-in');
-
-hotelSearchBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    popup.classList.add('modal-content-show');
-    dateCheckInInput.focus();
-});
