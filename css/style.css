@@ -278,10 +278,8 @@ img {
 .dignity-title p:last-child { margin-bottom: 0; }
 
 .dignity-container {
-    position: relative;
     min-height: 255px;
     background-color: #eeeeee;
-    z-index: 20;
 }
 
 .dignity-item {
@@ -380,19 +378,13 @@ img {
 
 .hotel-search {
     position: relative;
-    z-index: 10;
-}
-
-.hotel-search-content {
-    position: relative;
     min-height: 235px;
     padding-top: 55px;
     text-align: center;
     background-color: #ffffff;
-    z-index: 10;
 }
 
-.hotel-search-content b {
+.hotel-search b {
     display: block;
     margin-bottom: 25px;
     font-size: 30px;
@@ -400,12 +392,12 @@ img {
     color: #000000;
 }
 
-.hotel-search-content p {
+.hotel-search p {
     margin-bottom: 37px;
     line-height: 24px;
 }
 
-.hotel-search-content > .btn {
+.hotel-search > .btn {
     width: 568px;
     padding: 30px 10px;
     font-size: 21px;
@@ -413,7 +405,10 @@ img {
     box-sizing: border-box;
 }
 
-.map { position: relative; }
+.map {
+    position: relative;
+    overflow: hidden;
+}
 
 #map-canvas {
     width: 100%;
@@ -838,7 +833,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
 =========================================*/
 .modal-content-hotel-search {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 50%;
     width: 568px;
     display: none;
@@ -848,7 +843,6 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     background-color: #ffffff;
     box-sizing: border-box;
     box-shadow: 0 7px 15px rgba(0, 1, 1, .15);
-    z-index: 5;
 }
 
 .modal-content-show {
