@@ -55,9 +55,9 @@ body {
 =            $Animations            =
 ===================================*/
 @keyframes bounce {
-    0% { transform: translate(-50%, -392px); }
-    70% { transform: translate(-50%, 35px); }
-    100% { transform: translate(-50%, 0); }
+    0% { transform: translateY(-392px); }
+    70% { transform: translateY(35px); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes shake {
@@ -838,7 +838,7 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     width: 568px;
     display: none;
     padding: 55px;
-    transform: translateX(-50%);
+    margin-left: -284px;
     z-index: 20;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -965,4 +965,6 @@ input[type="checkbox"]:checked + .checkbox-indicator::before { content: "\2611";
     padding: 16px 10px;
     width: 100%;
 }
+
+.modal-error { animation: shake 0.6s; }
 /*=====  End of Всплывающая форма  ======*/
