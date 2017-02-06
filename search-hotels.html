@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Городок &laquo;Седона&raquo;</title>
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="inner-page">
+    <header class="main-header container">
+        <nav class="main-navigation">
+            <a class="logo" href="index.html">
+                <img src="img/logo.png" width="138" height="70" alt="Логотип City of Sedona">
+            </a>
+            <ul class="clearfix">
+                <li><a  href="#">информация</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li class="active">гостиницы</li>
+                <li><a href="#">карта штата</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container hotel-search-content">
+        <form action="" method="post" name="hotel-search">
+            <table>
+                <tr>
+                    <td>
+                        <label for="date-check-in">дата заезда:</label>
+                    </td>
+                    <td colspan="3">
+                        <div class="select-date">
+                            <input type="date" id="date-check-in">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date-leaving">дата выезда:</label>
+                    </td>
+                    <td colspan="3">
+                        <div class="select-date">
+                            <input type="date" id="date-leaving">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adults">Взрослые:</label>
+                    </td>
+                    <td>
+                        <input class="number-persons" type="text" maxlength="3" id="adults" value="0">
+                    </td>
+                    <td class="label-content">
+                        <label for="children">Дети:</label>
+                    </td>
+                    <td>
+                        <input class="number-persons" type="text" maxlength="3" id="children" value="0">
+                    </td>
+                </tr>
+            </table>
+            <button class="btn btn-blue" type="submit">Найти</button>
+        </form>
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                    #visitsedona
+                </section>
+                <section class="footer-social">
+                    <a class="social-btn" href="#">Twitter <i class="icon-twitter"></i></a>
+                    <a class="social-btn" href="#">Facebook <i class="icon-facebook"></i></a>
+                    <a class="social-btn" href="#">Youtube <i class="icon-youtube"></i></a>
+                </section>
+                <section class="footer-copyright">
+                    <p>website by <a href="#">HTML Academy</a></p>
+                </section>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
